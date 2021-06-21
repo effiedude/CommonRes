@@ -1,0 +1,65 @@
+plugins {id 'com.android.library'}
+
+group 'com.townspriter.android.base'
+ext.artifactId='value'
+
+android
+{
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig
+    {
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "proguard-rules.pro"
+    }
+
+    buildTypes
+    {
+        release
+        {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),'proguard-rules.pro'
+        }
+    }
+
+    compileOptions
+    {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions
+    {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkAllWarnings true
+    }
+}
+
+dependencies
+{
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+task deleteOldJar(type:Delete) {delete 'food/Value.aar'}
+
+task exportJar(type:Copy){
+    from('build/outputs/aar/')
+    into('food/')
+    include('Value-release.aar')
+    rename('Value-release.aar','Value.aar')
+}
+
+exportJar.dependsOn(deleteOldJar,build)
