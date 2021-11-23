@@ -1,4 +1,4 @@
-rootProject.name='Value'
+rootProject.name='CommonRes'
 
 include ':Main'
 include ':JarModule'

@@ -1,7 +1,7 @@
 plugins {id 'com.android.library'}
 
-group 'com.townspriter.android.base'
-ext.artifactId='value'
+group 'com.townspriter.base'
+ext.artifactId='CommonRes'
 
 android
 {
@@ -53,13 +53,13 @@ dependencies
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-task deleteOldJar(type:Delete) {delete 'food/Value.aar'}
+task deleteOldJar(type:Delete) {delete 'food/CommonRes.aar'}
 
 task exportJar(type:Copy){
     from('build/outputs/aar/')
     into('food/')
-    include('Value-release.aar')
-    rename('Value-release.aar','Value.aar')
+    include('JarModule-release.aar')
+    rename('JarModule-release.aar','CommonRes.aar')
 }
 
 exportJar.dependsOn(deleteOldJar,build)

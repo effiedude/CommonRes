@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--******************************品牌色*********************************-->
+    <color name="pwexbrandxcolor">#FF5454DC</color>
+    <color name="pwexbrandxcolorx02">#065454DC</color>
+    <color name="pwexbrandxcolorx10">#1A5454DC</color>
+    <color name="pwexbrandxcolorx12">#1E5454DC</color>
+    <color name="pwexbrandxcolorx20">#335454DC</color>
+
+    <!--******************************辅助色*********************************-->
+    <color name="pwexassistxcolor">#FFFDB93F</color>
+
+    <!--******************************文字色*********************************-->
+    <!--标题或正文色值-->
+    <color name="pwextextxtitlexcolor">#FF4A4A4A</color>
+    <!--辅助信息色值-->
+    <color name="pwextextxassistxcolor">#FF999999</color>
+    <color name="pwextextxassistxcolorx10">#1A999999</color>
+    <!--灰色按钮或分割线色值(添加透明度)-->
+    <color name="pwextextxdisablexcolor">#FFC4C4C4</color>
+    <!--页面背景色-->
+    <color name="pwextextxbackxcolor">#FFFAFAFA</color>
+    <!--页面背景或文字色值-->
+    <color name="pwextextxnormalxcolor">#FFFFFFFF</color>
+
+</resources>

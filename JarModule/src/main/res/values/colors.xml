@@ -1,99 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="valuexcolorxgolden">#FFFDB93F</color>
+    <color name="resxcolorxgolden">#FFFDB93F</color>
 
     <!--******************************黑色*********************************-->
     <!--正黑色-->
-    <color name="valuexcolorxblack">#FF000000</color>
-    <color name="valuexcolorxblackX40">#66000000</color>
+    <color name="resxcolorxblack">#FF000000</color>
+    <color name="resxcolorxblackX40">#66000000</color>
 
     <!--******************************透明*********************************-->
-    <color name="valuexcolorxtranslate">#00000000</color>
+    <color name="resxcolorxtranslate">#00000000</color>
 
     <!--*****************************灰色*********************************-->
-    <color name="valuexcolorxgray">#FF979797</color>
-    <color name="valuexcolorxgrayx10">#20979797</color>
-    <color name="valuexcolorxgrayx20">#33979797</color>
-    <color name="valuexcolorxgrayx30">#4C979797</color>
-    <color name="valuexcolorxgrayx75">#C0979797</color>
+    <color name="resxcolorxgray">#FF979797</color>
+    <color name="resxcolorxgrayx10">#20979797</color>
+    <color name="resxcolorxgrayx20">#33979797</color>
+    <color name="resxcolorxgrayx30">#4C979797</color>
+    <color name="resxcolorxgrayx75">#C0979797</color>
 
     <!--*****************************黄色*********************************-->
     <!--正黄色-->
-    <color name="valuexcolorxyellow">#FFFFFF00</color>
+    <color name="resxcolorxyellow">#FFFFFF00</color>
     <!--黄绿色-->
-    <color name="valuexcolorxyellowxgreen">#FF9ACD32</color>
+    <color name="resxcolorxyellowxgreen">#FF9ACD32</color>
     <!--芥末黄-->
-    <color name="valuexcolorxyellowxmustard">#FFCCCC4D</color>
+    <color name="resxcolorxyellowxmustard">#FFCCCC4D</color>
 
     <!--*****************************褐色*********************************-->
     <!--深褐色-->
-    <color name="valuexcolorxbrownxdark">#FF704214</color>
+    <color name="resxcolorxbrownxdark">#FF704214</color>
 
     <!--*****************************白色*********************************-->
     <!--正白色-->
-    <color name="valuexcolorxwhite">#FFFFFFFF</color>
-    <color name="valuexcolorxwhitex10">#19FFFFFF</color>
-    <color name="valuexcolorxwhitex50">#80FFFFFF</color>
-    <color name="valuexcolorxwhitex75">#C0FFFFFF</color>
+    <color name="resxcolorxwhite">#FFFFFFFF</color>
+    <color name="resxcolorxwhitex10">#19FFFFFF</color>
+    <color name="resxcolorxwhitex50">#80FFFFFF</color>
+    <color name="resxcolorxwhitex75">#C0FFFFFF</color>
     <!--象牙色-->
-    <color name="valuexcolorxwhitexivory">#FFFFFFF0</color>
+    <color name="resxcolorxwhitexivory">#FFFFFFF0</color>
 
     <!--*****************************绿色*********************************-->
     <!--正绿色-->
-    <color name="valuexcolorxgreen">#FF00FF00</color>
+    <color name="resxcolorxgreen">#FF00FF00</color>
     <!--叶绿色-->
-    <color name="valuexcolorxgreenxleaf">#FF73B839</color>
+    <color name="resxcolorxgreenxleaf">#FF73B839</color>
     <!--草绿色-->
-    <color name="valuexcolorxgreenxgrass">#FF99E64D</color>
+    <color name="resxcolorxgreenxgrass">#FF99E64D</color>
 
     <!--*****************************蓝色*********************************-->
     <!--正蓝色-->
-    <color name="valuexcolorxblue">#FF0000FF</color>
+    <color name="resxcolorxblue">#FF0000FF</color>
     <!--海军蓝-->
-    <color name="valuexcolorxbluexnavy">#FF000080</color>
+    <color name="resxcolorxbluexnavy">#FF000080</color>
     <!--暗蓝色-->
-    <color name="valuexcolorxbluexdark">#FF00008B</color>
+    <color name="resxcolorxbluexdark">#FF00008B</color>
     <!--午夜蓝-->
-    <color name="valuexcolorxbluexmidnight">#FF191970</color>
+    <color name="resxcolorxbluexmidnight">#FF191970</color>
     <!--青玉色-->
-    <color name="valuexcolorxbluexsapphire">#FF082567</color>
+    <color name="resxcolorxbluexsapphire">#FF082567</color>
     <!--靛青色-->
-    <color name="valuexcolorxbluexindigo">#FF4B0080</color>
+    <color name="resxcolorxbluexindigo">#FF4B0080</color>
 
     <!--*****************************粉色*********************************-->
     <!--亮粉色-->
-    <color name="valuexcolorxpinkxbright">#FFFFB6C1</color>
+    <color name="resxcolorxpinkxbright">#FFFFB6C1</color>
 
     <!--*****************************红色*********************************-->
     <!--正红色-->
-    <color name="valuexcolorxred">#FFFF0000</color>
+    <color name="resxcolorxred">#FFFF0000</color>
     <!--印度红-->
-    <color name="valuexcolorxredxindian">#FFCD5C5C</color>
+    <color name="resxcolorxredxindian">#FFCD5C5C</color>
     <!--西红柿-->
-    <color name="valuexcolorxredxtomato">#FFE32636</color>
-
-    <!--******************************品牌色*********************************-->
-    <color name="pwexbrandxcolor">#FF5454DC</color>
-    <color name="pwexbrandxcolorx02">#065454DC</color>
-    <color name="pwexbrandxcolorx10">#1A5454DC</color>
-    <color name="pwexbrandxcolorx12">#1E5454DC</color>
-    <color name="pwexbrandxcolorx20">#335454DC</color>
-
-    <!--******************************辅助色*********************************-->
-    <color name="pwexassistxcolor">#FFFDB93F</color>
-
-    <!--******************************文字色*********************************-->
-    <!--标题或正文色值-->
-    <color name="pwextextxtitlexcolor">#FF4A4A4A</color>
-    <!--辅助信息色值-->
-    <color name="pwextextxassistxcolor">#FF999999</color>
-    <color name="pwextextxassistxcolorx10">#1A999999</color>
-    <!--灰色按钮或分割线色值(添加透明度)-->
-    <color name="pwextextxdisablexcolor">#FFC4C4C4</color>
-    <!--页面背景色-->
-    <color name="pwextextxbackxcolor">#FFFAFAFA</color>
-    <!--页面背景或文字色值-->
-    <color name="pwextextxnormalxcolor">#FFFFFFFF</color>
+    <color name="resxcolorxredxtomato">#FFE32636</color>
 
 </resources>

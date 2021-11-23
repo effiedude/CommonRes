@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <integer name="valuexintegerxalphax60">153</integer>
-    <integer name="valuexintegerxalphax75">191</integer>
+    <integer name="resxintegerxalphax60">153</integer>
+    <integer name="resxintegerxalphax75">191</integer>
 
 </resources>

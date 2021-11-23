@@ -1,0 +1,85 @@
+<resources>
+
+    <style name="PWEEditStyle">
+        <item name="android:background">@drawable/resxdrawablexeditxback</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textCursorDrawable">@drawable/resxdrawablexeditxcursor</item>
+        <item name="android:textSize">@dimen/pwextextxsizexnormal</item>
+        <item name="android:textColor">@color/pwextextxtitlexcolor</item>
+        <item name="android:textColorHint">@color/resxcolorxgray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="PWEButtonStyle">
+        <item name="android:background">@drawable/resxdrawablexbtnxback</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/pwextextxsizexbig</item>
+        <item name="android:textColor">@color/resxcolorxwhite</item>
+    </style>
+
+    <style name="PWEProgressStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/resxdrawablexmediaxcontentxprogressbarxback</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="PWEBaseTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="PWESmallerTextStyle" parent="PWEBaseTextStyle">
+        <item name="android:textColor">@color/resxcolorxwhite</item>
+        <item name="android:textSize">@dimen/pwextextxsizexsmaller</item>
+    </style>
+
+    <style name="PWESmallTextStyle" parent="PWESmallerTextStyle">
+        <item name="android:textSize">@dimen/pwextextxsizexsmall</item>
+    </style>
+
+    <style name="PWENormalTextStyle" parent="PWESmallerTextStyle">
+        <item name="android:textSize">@dimen/pwextextxsizexnormal</item>
+    </style>
+
+    <style name="PWEBiggerTextStyle" parent="PWESmallerTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/pwextextxsizexbigger</item>
+    </style>
+
+    <style name="PWEBaseTitleTextStyle" parent="PWEBaseTextStyle">
+        <item name="android:textColor">@color/pwextextxtitlexcolor</item>
+    </style>
+
+    <style name="PWESmallTitleTextStyle" parent="PWEBaseTitleTextStyle">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">@dimen/pwextextxsizexsmall</item>
+    </style>
+
+    <style name="PWENormalTitleTextStyle" parent="PWEBaseTitleTextStyle">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">@dimen/pwextextxsizexnormal</item>
+    </style>
+
+    <style name="PWEBigTitleTextStyle" parent="PWEBaseTitleTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/pwextextxsizexbig</item>
+    </style>
+
+    <style name="PWEBiggestTitleTextStyle" parent="PWEBaseTitleTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/pwextextxsizexbiggest</item>
+    </style>
+
+</resources>

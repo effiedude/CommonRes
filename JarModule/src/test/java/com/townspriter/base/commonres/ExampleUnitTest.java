@@ -1,4 +1,4 @@
-package com.townspriter.android.base.value;
+package com.townspriter.base.commonres;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
