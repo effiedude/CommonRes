@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spritexvaluexstrokexwidth">0.5dp</dimen>
+
+    <dimen name="spritexvaluexroundxconnerxsizexsmaller">10dp</dimen>
+    <dimen name="spritexvaluexroundxconnerxsizexsmall">20dp</dimen>
+    <dimen name="spritexvaluexroundxconnerxsizexbig">40dp</dimen>
+
+    <dimen name="spritexvaluextextxsizexbig">16dp</dimen>
+    <dimen name="spritexvaluextextxsizexbigger">20dp</dimen>
+    <dimen name="spritexvaluextextxsizexbiggest">21dp</dimen>
+    <dimen name="spritexvaluextextxsizexnormal">14dp</dimen>
+    <dimen name="spritexvaluextextxsizexsmall">12dp</dimen>
+    <dimen name="spritexvaluextextxsizexsmaller">11dp</dimen>
+    <dimen name="spritexvaluextextxsizexsmallest">10dp</dimen>
+
+</resources>

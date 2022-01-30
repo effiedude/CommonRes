@@ -1,0 +1,86 @@
+<resources>
+
+    <style name="SpriteEditStyle">
+        <item name="android:background">@drawable/spritexdrawablexeditxback</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textCursorDrawable">@drawable/spritexdrawablexeditxcursor</item>
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexnormal</item>
+        <item name="android:textColor">@color/spritexcolorxtextxtitle</item>
+        <item name="android:textColorHint">@color/uixcolorxgray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="SpriteButtonStyle">
+        <item name="android:background">@drawable/spritexdrawablexbuttonxsmallxback</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexbig</item>
+        <item name="android:textColor">@color/uixcolorxwhite</item>
+    </style>
+
+    <style name="SpriteProgressStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/spritexdrawablexprogressxback</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <!--文本样式-->
+
+    <style name="SpriteBaseTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/uixcolorxwhite</item>
+    </style>
+
+    <style name="SpriteSmallerTextStyle" parent="SpriteBaseTextStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexsmaller</item>
+    </style>
+
+    <style name="SpriteSmallTextStyle" parent="SpriteBaseTextStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexsmall</item>
+    </style>
+
+    <style name="SpriteNormalTextStyle" parent="SpriteBaseTextStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexnormal</item>
+    </style>
+
+    <style name="SpriteBiggerTextStyle" parent="SpriteBaseTextStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexbigger</item>
+    </style>
+
+    <style name="SpriteBaseTitleStyle" parent="SpriteBaseTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/spritexcolorxtextxtitle</item>
+    </style>
+
+    <!--标题样式-->
+
+    <style name="SpriteSmallTitleTextStyle" parent="SpriteBaseTitleStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexsmall</item>
+    </style>
+
+    <style name="SpriteNormalTitleTextStyle" parent="SpriteBaseTitleStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexnormal</item>
+    </style>
+
+    <style name="SpriteBigTitleTextStyle" parent="SpriteBaseTitleStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexbig</item>
+    </style>
+
+    <style name="SpriteBiggerTitleTextStyle" parent="SpriteBaseTitleStyle">
+        <item name="android:textSize">@dimen/spritexvaluextextxsizexbigger</item>
+    </style>
+
+</resources>

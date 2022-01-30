@@ -1,4 +1,4 @@
-package com.townspriter.base.commonres;
+package com.sprite.base.common.ui;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

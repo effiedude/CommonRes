@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
         <shape>
-            <solid android:color="@color/resxcolorxwhite"/>
+            <solid android:color="@color/uixcolorxwhite"/>
             <size android:height="4dp"/>
             <corners android:radius="3dp"/>
         </shape>
@@ -10,7 +10,7 @@
     <item android:id="@android:id/secondaryProgress">
         <clip>
             <shape>
-                <solid android:color="@color/resxcolorxwhitex10"/>
+                <solid android:color="@color/uixcolorxwhitexalphax10"/>
                 <size android:height="4dp"/>
                 <corners android:radius="3dp"/>
             </shape>
@@ -19,7 +19,7 @@
     <item android:id="@android:id/progress">
         <clip>
             <shape>
-                <solid android:color="@color/pwexbrandxcolor"/>
+                <solid android:color="@color/spritexcolorxbrand"/>
                 <size android:height="4dp"/>
                 <corners android:radius="3dp"/>
             </shape>

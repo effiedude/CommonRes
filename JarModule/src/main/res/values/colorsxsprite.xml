@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--******************************品牌色*********************************-->
+    <color name="spritexcolorxbrand">#FF5454DC</color>
+    <color name="spritexcolorxbrandxalphax02">#065454DC</color>
+    <color name="spritexcolorxbrandxalphax10">#1A5454DC</color>
+    <color name="spritexcolorxbrandxalphax12">#1E5454DC</color>
+    <color name="spritexcolorxbrandxalphax20">#335454DC</color>
+
+    <!--******************************辅助色*********************************-->
+    <color name="spritexcolorxassist">#FFFDB93F</color>
+
+    <!--******************************文字色*********************************-->
+    <!--标题或正文色值-->
+    <color name="spritexcolorxtextxtitle">#FF4A4A4A</color>
+    <color name="spritexcolorxtextxsubtitlexalphax10">#1A999999</color>
+    <!--灰色按钮或分割线色值(添加透明度)-->
+    <color name="spritexcolorxtextxdisabled">#FFC4C4C4</color>
+    <!--页面背景色-->
+    <color name="spritexcolorxtextxback">#FFFAFAFA</color>
+
+</resources>

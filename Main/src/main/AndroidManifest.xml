@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.townspriter.android.template">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sprite.android.template">
 
     <application
-        android:name=".APP"
+        android:name="com.sprite.android.template.APP"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/appName"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         >
 
-        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat">
+        <activity android:name="com.sprite.android.template.MainActivity" android:theme="@style/Theme.AppCompat">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

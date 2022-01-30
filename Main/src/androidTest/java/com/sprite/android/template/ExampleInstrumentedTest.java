@@ -1,4 +1,4 @@
-package com.townspriter.android.template;
+package com.sprite.android.template;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

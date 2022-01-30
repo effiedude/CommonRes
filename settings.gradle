@@ -1,4 +1,4 @@
-rootProject.name='CommonRes'
+rootProject.name='CommonUI'
 
 include ':Main'
 include ':JarModule'

@@ -1,4 +1,4 @@
-package com.townspriter.android.template;
+package com.sprite.android.template;
 
 import android.app.Application;
 
@@ -8,7 +8,7 @@ import android.app.Application;
  * @describe 程序入口
  * @author 张飞
  * @email zhangfei@townspriter.com
- * @date 2021-06-07 14:59:43
+ * @date 2021-06-07-14:59
  * CopyRight(C)2020 小镇精灵工作室版权所有
  * *****************************************************************************
  */

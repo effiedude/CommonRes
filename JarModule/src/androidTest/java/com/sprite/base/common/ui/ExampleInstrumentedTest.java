@@ -1,4 +1,4 @@
-package com.townspriter.base.commonres;
+package com.sprite.base.common.ui;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -14,6 +14,6 @@ public class ExampleInstrumentedTest
     public void useAppContext()
     {
         Context appContext=InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.townspriter.base.commonres",appContext.getPackageName());
+        assertEquals("com.sprite.base.common.ui",appContext.getPackageName());
     }
 }

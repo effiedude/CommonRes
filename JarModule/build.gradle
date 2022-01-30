@@ -1,7 +1,7 @@
 plugins {id 'com.android.library'}
 
 group 'com.townspriter.base'
-ext.artifactId='CommonRes'
+ext.artifactId='CommonUI'
 
 android
 {
@@ -53,13 +53,13 @@ dependencies
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-task deleteOldJar(type:Delete) {delete 'food/CommonRes.aar'}
+task deleteOldJar(type:Delete) {delete 'food/CommonUI.aar'}
 
 task exportJar(type:Copy){
     from('build/outputs/aar/')
     into('food/')
     include('JarModule-release.aar')
-    rename('JarModule-release.aar','CommonRes.aar')
+    rename('JarModule-release.aar','CommonUI.aar')
 }
 
 exportJar.dependsOn(deleteOldJar,build)
