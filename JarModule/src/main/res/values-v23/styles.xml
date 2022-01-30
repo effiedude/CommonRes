@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--亮色模式:状态栏图标和文字变成黑色-->
+    <style name="ImmersionBlackTheme" parent="ImmersionTheme">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ImmersionWhiteTheme" parent="ImmersionTheme">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>
