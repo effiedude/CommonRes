@@ -5,8 +5,8 @@
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/valuexcolorxgolden</item>
-        <item name="android:navigationBarColor">@color/valuexcolorxgolden</item>
+        <item name="android:statusBarColor">@color/uixcolorxgolden</item>
+        <item name="android:navigationBarColor">@color/uixcolorxgolden</item>
     </style>
 
 </resources>

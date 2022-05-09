@@ -21,8 +21,14 @@ android
 
     buildTypes
     {
+        debug
+        {
+            zipAlignEnabled true
+            minifyEnabled false
+        }
         release
         {
+            zipAlignEnabled true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),'proguard-rules.pro'
         }
@@ -47,6 +53,8 @@ dependencies
 {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.github.effiedude:Foundation:1.0.3'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
