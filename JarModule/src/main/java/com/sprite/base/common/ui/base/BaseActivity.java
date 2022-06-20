@@ -5,16 +5,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Queue;
-
 import com.sprite.base.common.ui.util.TranslucentStatusBar;
-
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 /******************************************************************************
- * @path Talent:BaseActivity
+ * @path BaseActivity
  * @describe 基础类
  * @author
  * @email

@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 /******************************************************************************
- * @path Talent:FragmentHelper
+ * @path FragmentHelper
  * @version 1.0.0.0
  * @describe 片段管理器
  * @author 张飞

@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Queue;
-
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -120,7 +117,7 @@ public abstract class BaseFragment extends Fragment implements View.OnTouchListe
         }
         return rootView.findViewById(id);
     }
-
+    
     protected boolean onBackPressed()
     {
         return false;
@@ -137,7 +134,7 @@ public abstract class BaseFragment extends Fragment implements View.OnTouchListe
     {
         return false;
     }
-
+    
     public void addPresenter(BasePresenter presenter)
     {
         presenterList.add(presenter);
@@ -210,7 +207,7 @@ public abstract class BaseFragment extends Fragment implements View.OnTouchListe
             Objects.requireNonNull(afterResumeActions.poll()).run();
         }
     }
-
+    
     /**
      * setLayoutResourceId
      * 设置根布局资源

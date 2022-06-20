@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /******************************************************************************
- * @path Talent:AbstractBaseRecyclerView
+ * @path AbstractBaseRecyclerView
  * @version 1.0.0.0
  * @describe 横竖滚动控件基类.业务场景除非特殊定制化.否则应该不需要继承此类.应根据需求继承:{@link BaseHorizontalRecyclerView}或{@link BaseVerticalRecyclerView}
  * @author 张飞

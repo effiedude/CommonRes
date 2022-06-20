@@ -7,7 +7,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 
 /******************************************************************************
- * @path Talent:NormalTextWatcher
+ * @path NormalTextWatcher
  * @version 1.0.0.0
  * @describe 输入框过滤器
  * @author 张飞

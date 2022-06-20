@@ -2,9 +2,7 @@ package com.sprite.base.common.ui.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
 import com.townspriter.base.foundation.utils.system.SystemUtil;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.graphics.Color;
@@ -102,7 +100,7 @@ public class TranslucentStatusBar
         }
     }
     
-    private static void setTranslucentStatusForFlyMe(Activity activity, boolean dark)
+    private static void setTranslucentStatusForFlyMe(Activity activity,boolean dark)
     {
         Window window=activity.getWindow();
         if(window!=null)
@@ -143,7 +141,7 @@ public class TranslucentStatusBar
     {
         return SystemUtil.isMeiZuMXSeries();
     }
-
+    
     public static boolean isAndroidLOLLIPOP()
     {
         return Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP||Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP_MR1;

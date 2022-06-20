@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /******************************************************************************
- * @path Talent:BaseVerticalRecyclerView
+ * @path BaseVerticalRecyclerView
  * @version 1.0.0.0
  * @describe
  * @author 张飞

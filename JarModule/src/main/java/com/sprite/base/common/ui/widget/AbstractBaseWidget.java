@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.LayoutRes;
 
 /******************************************************************************
- * @path Talent:AbstractBaseWidget
+ * @path AbstractBaseWidget
  * @version 1.0.0.0
  * @describe 默认无内容页面
  * @author 张飞

@@ -3,7 +3,7 @@ package com.sprite.base.common.ui.widget;
 import android.view.View;
 
 /******************************************************************************
- * @path Talent:IWidget
+ * @path IWidget
  * @version 1.0.0.0
  * @describe 控件定义模板
  * @author 张飞
