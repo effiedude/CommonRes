@@ -54,7 +54,7 @@ dependencies
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
 
-    implementation 'com.github.effiedude:Foundation:1.0.5'
+    implementation 'com.github.effiedude:Foundation:1.0.4.3'
     implementation 'org.greenrobot:eventbus:3.2.0'
 
     testImplementation 'junit:junit:4.+'
