@@ -1,4 +1,4 @@
-package com.sprite.base.common.ui.base;
+package com.sprite.base.common.ui.fragment;
 
 import android.util.Log;
 import androidx.annotation.IdRes;
@@ -58,11 +58,6 @@ public class FragmentHelper
     public void switchFragment(@NonNull AppCompatActivity activity,@NonNull String fragmentTag,@Nullable BaseFragment fragment)
     {
         mFragmentManager=activity.getSupportFragmentManager();
-        if(mFragmentManager==null)
-        {
-            Log.e(TAG,"switchFragment-fragmentManager:NULL");
-            return;
-        }
         mFragmentTransaction=mFragmentManager.beginTransaction();
         mFragmentTransaction.replace(mContainLayoutId,fragment).addToBackStack(fragmentTag).commit();
     }

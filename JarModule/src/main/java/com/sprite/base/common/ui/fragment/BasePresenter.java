@@ -1,5 +1,6 @@
-package com.sprite.base.common.ui.base;
+package com.sprite.base.common.ui.fragment;
 
+import com.sprite.base.common.ui.activity.BaseActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -31,25 +32,25 @@ public abstract class BasePresenter
         }
     }
     
-    protected void onCreate()
+    public void onCreate()
     {}
     
-    protected void onViewCreated(View view)
+    public void onViewCreated(View view)
     {}
     
-    protected void onResume()
+    public void onResume()
     {}
     
-    protected void onPause()
+    public void onPause()
     {}
     
-    protected void onDestroyView()
+    public void onDestroyView()
     {}
     
-    protected void onDestroy()
+    public void onDestroy()
     {}
     
-    protected void addAfterResume(Runnable runnable)
+    public void addAfterResume(Runnable runnable)
     {
         if(baseFragment==null)
         {

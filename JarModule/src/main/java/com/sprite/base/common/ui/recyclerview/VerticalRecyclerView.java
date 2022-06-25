@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /******************************************************************************
- * @path BaseVerticalRecyclerView
+ * @path VerticalRecyclerView
  * @version 1.0.0.0
  * @describe
  * @author 张飞
@@ -15,19 +15,19 @@ import androidx.annotation.Nullable;
  * CopyRight(C)2021 小镇精灵工作室版权所有
  * *****************************************************************************
  */
-public class BaseVerticalRecyclerView extends AbstractBaseRecyclerView
+public class VerticalRecyclerView extends BaseRecyclerView
 {
-    public BaseVerticalRecyclerView(@NonNull Context context)
+    public VerticalRecyclerView(@NonNull Context context)
     {
         super(context);
     }
     
-    public BaseVerticalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs)
+    public VerticalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs)
     {
         super(context,attrs);
     }
     
-    public BaseVerticalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs,int defStyleAttr)
+    public VerticalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs,int defStyleAttr)
     {
         super(context,attrs,defStyleAttr);
     }

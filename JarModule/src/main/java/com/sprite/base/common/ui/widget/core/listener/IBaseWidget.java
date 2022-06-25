@@ -1,9 +1,9 @@
-package com.sprite.base.common.ui.widget;
+package com.sprite.base.common.ui.widget.core.listener;
 
 import android.view.View;
 
 /******************************************************************************
- * @path IWidget
+ * @path IBaseWidget
  * @version 1.0.0.0
  * @describe 控件定义模板
  * @author 张飞
@@ -38,7 +38,7 @@ public interface IBaseWidget
      * isValid
      * 检测数据的有效性
      * 
-     * @return
+     * @return 数据是否有效
      */
     boolean isValid();
 }

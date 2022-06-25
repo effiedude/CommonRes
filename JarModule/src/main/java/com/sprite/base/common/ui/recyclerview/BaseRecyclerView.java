@@ -10,16 +10,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /******************************************************************************
- * @path AbstractBaseRecyclerView
+ * @path BaseRecyclerView
  * @version 1.0.0.0
- * @describe 横竖滚动控件基类.业务场景除非特殊定制化.否则应该不需要继承此类.应根据需求继承:{@link BaseHorizontalRecyclerView}或{@link BaseVerticalRecyclerView}
+ * @describe 横竖滚动控件基类.业务场景除非特殊定制化.否则应该不需要继承此类
+ * 应根据需求继承:{@link HorizontalRecyclerView}或{@link VerticalRecyclerView}
  * @author 张飞
  * @email
  * @date 2021-06-28-15:08
  * CopyRight(C)2021 智慧培森科技版权所有
  * *****************************************************************************
  */
-public abstract class AbstractBaseRecyclerView extends RecyclerView
+public abstract class BaseRecyclerView extends RecyclerView
 {
     private static final int ITEMxVIEWxCACHExSIZE=30;
     /** 最小滑动距离优化.系统认为最小的滑动距离不一定精确.需要斟酌使用 */
@@ -27,17 +28,17 @@ public abstract class AbstractBaseRecyclerView extends RecyclerView
     private static final float SLOPxTHRESHOLDxHORIZONTALxPX=6;
     private static final float SLOPxFACTOR=5;
     
-    public AbstractBaseRecyclerView(@NonNull Context context)
+    public BaseRecyclerView(@NonNull Context context)
     {
         this(context,null,0);
     }
     
-    public AbstractBaseRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs)
+    public BaseRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs)
     {
         this(context,attrs,0);
     }
     
-    public AbstractBaseRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs,int defStyleAttr)
+    public BaseRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs,int defStyleAttr)
     {
         super(context,attrs,defStyleAttr);
         initView();
@@ -47,10 +48,7 @@ public abstract class AbstractBaseRecyclerView extends RecyclerView
      * @function isVerticalOrientation
      * @since JDK 1.7.0-79
      * @describe 设置控件的方向
-     * @param
-     * @exception
-     * @return
-     * true:纵向(默认) false:横向
+     * @return 是否是纵向 true:纵向 false:横向
      * @date 2021-06-28-15:17
      * @version 1.0.0.0
      * ********************************
@@ -72,10 +70,6 @@ public abstract class AbstractBaseRecyclerView extends RecyclerView
             layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         }
         setLayoutManager(layoutManager);
-        // RecyclerItemDecoration itemDecoration=new RecyclerItemDecoration(0);
-        // addItemDecoration(itemDecoration);
-        // 如果每个子类条的高度是固定的设置此方法减少重回次数
-        // setHasFixedSize(true);
         // 加大缓存
         setItemViewCacheSize(ITEMxVIEWxCACHExSIZE);
         setDrawingCacheEnabled(true);

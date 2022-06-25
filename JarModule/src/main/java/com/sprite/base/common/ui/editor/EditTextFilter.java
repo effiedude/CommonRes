@@ -7,7 +7,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 
 /******************************************************************************
- * @path NormalTextWatcher
+ * @path EditTextFilter
  * @version 1.0.0.0
  * @describe 输入框过滤器
  * @author 张飞
@@ -16,7 +16,7 @@ import androidx.annotation.NonNull;
  * CopyRight(C)2021 小镇精灵工作室版权所有
  * *****************************************************************************
  */
-public class NormalTextWatcher implements TextWatcher
+public class EditTextFilter implements TextWatcher
 {
     public static final String TAG="NormalTextWatcher";
     /** 汉字/字母/数字 */
@@ -26,12 +26,12 @@ public class NormalTextWatcher implements TextWatcher
     private final WeakReference<EditText> mEditText;
     private final String mRegex;
     
-    public NormalTextWatcher(@NonNull EditText editText)
+    public EditTextFilter(@NonNull EditText editText)
     {
         this(NORMALxREGEXxALL,editText);
     }
     
-    public NormalTextWatcher(@NonNull String regex,@NonNull EditText editText)
+    public EditTextFilter(@NonNull String regex,@NonNull EditText editText)
     {
         mRegex=regex;
         mEditText=new WeakReference<>(editText);

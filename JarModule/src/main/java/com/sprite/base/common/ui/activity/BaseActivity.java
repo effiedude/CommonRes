@@ -1,19 +1,29 @@
-package com.sprite.base.common.ui.base;
+package com.sprite.base.common.ui.activity;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Queue;
-import com.sprite.base.common.ui.util.TranslucentStatusBar;
+
+import com.sprite.base.common.eventbus.BindEventBus;
+import com.sprite.base.common.eventbus.EventBusProxy;
+import com.sprite.base.common.ui.fragment.BaseFragment;
+import com.sprite.base.common.ui.fragment.BasePresenter;
+import com.townspriter.base.foundation.utils.ui.TranslucentStatusBar;
+
+import android.content.Context;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 /******************************************************************************
  * @path BaseActivity
  * @describe 基础类
- * @author
+ * @author 张飞
  * @email
  * @date
  * CopyRight(C)2021 小镇精灵工作室版权所有
@@ -21,6 +31,7 @@ import androidx.fragment.app.Fragment;
  */
 public abstract class BaseActivity extends AppCompatActivity
 {
+    private static final float FONTxSCALE=1.0f;
     private final List<BasePresenter> presenterList=new ArrayList<>();
     private final Queue<Runnable> afterResumeActions=new LinkedList<>();
     private ActivityStatus activityStatus;
@@ -30,9 +41,10 @@ public abstract class BaseActivity extends AppCompatActivity
     {
         activityStatus=ActivityStatus.CREATE;
         super.onCreate(savedInstanceState);
-        addAfterResumeAction(()->TranslucentStatusBar.setup(BaseActivity.this,isStatusBarTextDark()));
+        addAfterResumeAction(()->TranslucentStatusBar.translucentActivity(BaseActivity.this,isStatusBarTextDark()));
         ActivityManager.getInstance().add(this);
         onPresentCreate();
+        registerEventBus();
     }
     
     @Override
@@ -72,9 +84,23 @@ public abstract class BaseActivity extends AppCompatActivity
         activityStatus=ActivityStatus.DESTROY;
         super.onDestroy();
         onPresentDestroy();
+        unregisterEventBus();
         ActivityManager.getInstance().remove(this);
     }
     
+    /*********************** 适配修改系统字体大小 ***********************/
+    @Override
+    public Resources getResources()
+    {
+        return getResourceInner(this);
+    }
+    
+    @Override
+    protected void attachBaseContext(Context newBase)
+    {
+        super.attachBaseContext(createConfigurationContextInner(newBase));
+    }
+
     public ActivityStatus getStatus()
     {
         return activityStatus;
@@ -155,4 +181,35 @@ public abstract class BaseActivity extends AppCompatActivity
             Objects.requireNonNull(afterResumeActions.poll()).run();
         }
     }
+    
+    private Context createConfigurationContextInner(Context context)
+    {
+        Configuration configuration=context.getResources().getConfiguration();
+        configuration.fontScale=FONTxSCALE;
+        return context.createConfigurationContext(configuration);
+    }
+    
+    private Resources getResourceInner(Context context)
+    {
+        Configuration configuration=context.getResources().getConfiguration();
+        configuration.fontScale=FONTxSCALE;
+        return context.createConfigurationContext(configuration).getResources();
+    }
+
+    private void registerEventBus()
+    {
+        if(getClass().isAnnotationPresent(BindEventBus.class))
+        {
+            EventBusProxy.register(this);
+        }
+    }
+    
+    private void unregisterEventBus()
+    {
+        if(getClass().isAnnotationPresent(BindEventBus.class))
+        {
+            EventBusProxy.unregister(this);
+        }
+    }
+
 }

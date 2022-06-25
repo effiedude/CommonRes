@@ -1,4 +1,4 @@
-package com.sprite.base.common.ui.base;
+package com.sprite.base.common.ui.fragment;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -16,6 +16,8 @@ import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.sprite.base.common.ui.activity.BaseActivity;
 
 /******************************************************************************
  * @path BaseFragment
@@ -103,13 +105,13 @@ public abstract class BaseFragment extends Fragment implements View.OnTouchListe
         super.onDestroy();
         onPresentDestroy();
     }
-    
-    protected BaseActivity getBaseActivity()
+
+    public BaseActivity getBaseActivity()
     {
         return baseActivity;
     }
-    
-    protected @Nullable <T extends View> T findViewById(int id)
+
+    public @Nullable <T extends View> T findViewById(int id)
     {
         if(rootView==null)
         {
@@ -117,20 +119,20 @@ public abstract class BaseFragment extends Fragment implements View.OnTouchListe
         }
         return rootView.findViewById(id);
     }
-    
-    protected boolean onBackPressed()
+
+    public boolean onBackPressed()
     {
         return false;
     }
     
     // 是否是沉浸式状态栏
-    protected boolean isStatusBarTextDark()
+    public boolean isStatusBarTextDark()
     {
         return false;
     }
     
     // 是否允许当前页面被截屏
-    protected boolean isScreenSecure()
+    public boolean isScreenSecure()
     {
         return false;
     }

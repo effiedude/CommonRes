@@ -1,4 +1,4 @@
-package com.sprite.base.common.ui.base;
+package com.sprite.base.common.ui.activity;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

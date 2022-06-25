@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /******************************************************************************
- * @path BaseHorizontalRecyclerView
+ * @path HorizontalRecyclerView
  * @version 1.0.0.0
  * @describe
  * @author 张飞
@@ -15,19 +15,19 @@ import androidx.annotation.Nullable;
  * CopyRight(C)2021 小镇精灵工作室版权所有
  * *****************************************************************************
  */
-public class BaseHorizontalRecyclerView extends AbstractBaseRecyclerView
+public class HorizontalRecyclerView extends BaseRecyclerView
 {
-    public BaseHorizontalRecyclerView(@NonNull Context context)
+    public HorizontalRecyclerView(@NonNull Context context)
     {
         super(context);
     }
     
-    public BaseHorizontalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs)
+    public HorizontalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs)
     {
         super(context,attrs);
     }
     
-    public BaseHorizontalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs,int defStyleAttr)
+    public HorizontalRecyclerView(@NonNull Context context,@Nullable AttributeSet attrs,int defStyleAttr)
     {
         super(context,attrs,defStyleAttr);
     }
